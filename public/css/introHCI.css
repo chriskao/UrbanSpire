@@ -1,5 +1,16 @@
+body {
+     background-image:url('fresh_snow.png');
+}
+
 .titles {
      text-align: center;
+     font-family: sans-serif;
+}
+
+.row {
+     text-align: center;
+     padding-left: 200px;
+     padding-right: 200px;
 }
 
 .milestones {
@@ -9,6 +20,21 @@
 #trevorpels {
      width: 200px;
      height: 200px;
+}
+
+#alexstabile {
+     width: 200px;
+     height: 200px;
+}
+
+#christinakao {
+     width: 200px;
+     height: 200px;
+}
+
+.milestone1-content {
+     padding-left: 200px;
+     padding-right: 200px;
 }
 
 /* applies to anything of class "example-class-selector" */
