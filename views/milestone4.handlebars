@@ -17,8 +17,148 @@
   </head>
   <body>
 
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">CS 247 - Interaction Design Studio</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/">The Plastics</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assignments <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="milestone1">Milestone 1</a></li>
+          <li><a href="milestone2">Milestone 2</a></li>
+          <li><a href="milestone3">Milestone 3</a></li>
+          <li><a href="milestone4">Milestone 4</a></li>
+          <li><a href="milestone5">Milestone 5</a></li>
+          <li><a href="milestone6">Milestone 6</a></li>
+          <li><a href="milestone7">Milestone 7</a></li>
+          <li><a href="milestone8">Milestone 8</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    </br>
+
+    <div class="titles">
+      <h1>CS 247 - Interaction Design Studio</h1>
+      <h2>Milestone 4: Functional Prototype I</h2>
+    </div>
+    </br>
+
+    <div class="titles"><h3><b>Feature choices</b></h3></div>
+    </br>
+      <div class="milestone-content">
+        We built our first prototype based on the functionality we envisioned in our Wizard of Oz prototype and the feedback we received from users who tried it out. It was built as a Hangouts app for ease of content synchronization across users, and because we intend video chat to be an integral part of the UX experience.  The UX happens in three phases:
+      </div>
+      </br>
+    <div class="titles"><b>Phase 1: Idea Generation</b></div>
+    </br>
+      <div class="milestone-content">
+        In this stage, users are encouraged to come up with as many ideas as possible. At this point, since they are not intended to discuss individual ideas, there is nothing more than a text field and button that they use to submit new ideas, which appear in a list visible to each user. They can still collectively consider ideas through video, but the clear functional focus is on generation, not evaluation.
+        </br>
+        </br>
+        <div class="titles">
+          <img width="700" src="images/prototype1-1.png">
+          </br>
+          </br>
+          <img width="700" src="images/prototype1-2.png">
+        </div>
+      </div>
+      </br>
+     <div class="titles"><b>Phase 2: Idea Discussion</b></div>
+     </br>
+      <div class="milestone-content">
+        Users are now meant to discuss their ideas and keep track of which seem to be the most popular. By clicking on an idea, the app displays it as the idea currently under discussion, and the idea appears larger each time it is clicked to indicate which ones are getting the most attention. During our WOz testing, users expressed interest in adding new ideas during this phase as well as the first, so we enabled this feature in our prototype.
+        </br>
+          </br>
+          <div class="titles">
+            <img width="700" src="images/prototype1-3.png">
+            </br>
+            </br>
+            <img width="700" src="images/prototype1-5.png">
+          </div>
+        </div>
+        </br>
+     <div class="titles"><b>Phase 3: Voting</b></div>
+     </br>
+      <div class="milestone-content">
+        At this point, users vote to select the best ideas. Based on what happened during our WOz testing, we decided that the voting system should be anonymous and blind, to avoid any peer pressure or “groupthink” effects. So, each user can click on ideas to add votes to them, which only appear on their own screen. When someone clicks the “done” button, all these votes are tallied and the top ideas are displayed in order.
+        With this core functionality implemented, users can experience the basic UX flow of using our app to structure a successful brainstorming session.
+        </br>
+          </br>
+          <div class="titles">
+            <img width="700" src="images/prototype1-6.png">
+            </br>
+            </br>
+            <img width="700" src="images/prototype1-8.png">
+          </div>
+        </div>
+        </br>
+        </br>
+    <div class="titles"><h3><b>Remaining Issues</b></h3></div>
+    </br>
+    <div class="milestone-content">
+      Going forward, we have two classes of possible features to implement. First are things we’ve identified as useful but non-essential through our previous Wizard of Oz testing. Second are features that may or may not be useful, whose utility and priority we would like to evaluate during user testing. </br>
+      To implement:
+
+    <ol>
+      </br>
+      <li>
+        <b>Adding prompts</b>: During WOz testing, we prodded stuck groups with various creative prompts. This was a minor feature which was nonetheless very useful in avoiding lulls. Since it was so effective in enhancing core functionality, it is our first priority.
+      </li>
+      </br>
+      <li>
+        <b>More guidance</b>: As it stands, there is very little of the redundant in-app instruction (e.g. “Press the ‘Add idea!’ button to jot down your thoughts!’) which helps first-time users understand the flow of the app. Since this affects usability without affecting core functionality, it is our second priority.
+      </li>
+      </br>
+      <li>
+        <b>General prettiness</b>: Make the user interface more visually pleasing and also intuitive after some initial user observations (e.g. see users are confused by any of our designs or functionality).
+      </li>
+    </ol>
+
+    </br>
+    To evaluate and potentially implement:
+
+    <ol>
+      </br>
+      <li>
+        <b>Recording video notes for later reference</b>: To preserve the thought processes that occurred during the brainstorming session, we envisioned a feature that would allow users to record video notes explaining their ideas and points that came up during discussion. However, we have some concern that people may not use this feature, especially re-watching old videos.
+      </li>
+      </br>
+      <li>
+        <b>Annotating ideas during the discussion phase</b>: Similar to the previous idea, we may want users to have a way to record important points from their discussion. This could be done by clicking on an idea on the canvas and adding some sort of annotation.
+      </li>
+      </br>
+      <li>
+        <b>Sub-ideas/categorization/linked ideas</b>: During WOz testing, several users expressed vague interest in categorizing ideas or clustering similar ones, to make the discussion phase more organized. 
+      </li>
+    </ol>
+
+    </div>
+    </br>
+    </br>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
+
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
 
