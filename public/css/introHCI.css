@@ -3,6 +3,12 @@ body {
      font-family: century gothic;
 }
 
+.hypothesis {
+     padding-left: 100px;
+     padding-right: 100px;
+}
+
+
 .titles {
      text-align: center;
      font-family: century gothic;
