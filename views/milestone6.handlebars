@@ -17,6 +17,89 @@
   </head>
   <body>
 
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">CS 247 - Interaction Design Studio</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/">The Plastics</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Assignments <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="milestone1">Milestone 1</a></li>
+          <li><a href="milestone2">Milestone 2</a></li>
+          <li><a href="milestone3">Milestone 3</a></li>
+          <li><a href="milestone4">Milestone 4</a></li>
+          <li><a href="milestone5">Milestone 5</a></li>
+          <li><a href="milestone6">Milestone 6</a></li>
+          <li><a href="milestone7">Milestone 7</a></li>
+          <li><a href="milestone8">Milestone 8</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    </br>
+
+    <div class="titles">
+      <h1>CS 247 - Interaction Design Studio</h1>
+      <h2>Milestone 6: Functional Prototype II</h2>
+    </div>
+    </br>
+
+    <div class="titles"><h3><b>Change Log</b></h3></div>
+    </br>
+      <div class="milestone-content">
+        The vast majority of our updates were to the discussion phase, since it turned out to be both crucial and slightly off-the-mark in the previous iteration. Rather than simply paste a few new features onto what we had, we reimagined it from the ground up. 
+        </br>
+        </br>
+        Our testing indicated that users’ goals in this phase were slightly different from those we had designed for: they wanted to update the app state to reflect their conclusions after each discussion point, not to reflect the flow of the discussion itself. This was clearly demonstrated in their use of our “current topic” feature: we wanted them to click on the idea they were discussing so it could appear at the top and grow bigger in the list as they discussed it further. Instead, they would simply click on the idea a few times when they were done discussing it, making the size match their conclusions about its importance.
+        </br>
+        </br>
+        It’s a subtle distinction, but a powerful one. So, we threw out our existing discussion phase features completely and crafted a new experience that more closely matches the needs expressed by our users.
+      </div>
+      </br>
+
+    <div class="titles"><h3><b>Additions</b></h3></div>
+    </br>
+    <div class="milestone-content">  
+      <ul>
+        <li><b>Categorization</b>: Many of our users explicitly said they wanted to sort ideas into categories. We also noticed that they had a viscerally positive reaction to our color-changing feature, and that this seemed to hold a large amount of semantic content for them. As such, we based our categorization feature around color. Users can match each category to a color in the new sidebar. When they add a particular idea to a category, it changes color as well. They can leave the various categories/colors mixed throughout their list, or they can press a button to sort their ideas by category.</li>
+        </br>
+        <li><b>Notes</b>: We added a note-taking panel in the sidebar as well. When users click on an idea, its existing notes are displayed in the panel. Users can add as many as they want, and the notes are synchronized across all users. When a user reopens the note panel, this is taken as a signal of popularity. As such, the font size of the idea grows. The note panel (and the entire sidebar, including categories) is not available until the discussion phase, so that users focus on quantity of ideas during the ideation phase.</li>
+        </br>
+        <div class="titles">
+          <img width="700" src="images/prototype2-1.png">
+          </br>
+        </div>
+        </br>
+        <li><b>Implementation Issues</b>: We made the idea list scrollable so that none would ever go permanently out of view. We also limited the number of votes each user can cast, so no one can seriously bias the results.</li>
+        </br>
+        <li><b>Prompts</b>: We added an option to receive prompts during the idea generation phase, in case things slow down. After some discussion, we agreed with the teaching team that it would be too pushy to have these prompts automatically appear during lulls. Thoughtful silences can be fruitful for some groups, so we made the prompts appear only when a user pressed the button requesting them.</li>
+        </br>
+        <li><b>Contextual Directions</b>: We added contextual tips to smooth out the experience and remove the need for first-time guidance.</li>
+
+      </ul>
+    </div>
+    </br>
+    </br>
+    <div class="milestone-content">
+      Note: We very seriously discussed Jofish’s suggestion that we tailor our app to the format of a particular brainstorming theorist. To some extent, we’d done this from the beginning, since our initial prototype relied heavily and explicitly on David Kelley’s seven guidelines for ideating. We considered going even further by implementing a more detailed set of rules (e.g. those which require specific Post-It colors for different types of ideas). However, we decided that we were already shaping the brainstorming process enough with our phase divisions and the functionalities available therein. We want to keep it fairly open to different groups with different preferences, and also to maintain the unique feel of our application. We understand that this is actually the more difficult path, and we would be happy to discuss our rationale for this further.
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
